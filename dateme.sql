@@ -250,7 +250,7 @@ CREATE TABLE `czars` (
   `password` varchar(64) NOT NULL,
   `created_at` datetime NOT NULL,
   `updated_at` datetime NOT NULL,
-  `last_login` datetime NOT NULL,
+  `last_login` datetime DEFAULT NULL,
   `last_ip` varchar(32) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
@@ -866,4 +866,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-10-04 11:12:43
+-- Dump completed on 2018-10-04 12:24:42
