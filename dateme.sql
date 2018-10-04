@@ -253,7 +253,7 @@ CREATE TABLE `czars` (
   `last_login` datetime NOT NULL,
   `last_ip` varchar(32) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -262,7 +262,7 @@ CREATE TABLE `czars` (
 
 LOCK TABLES `czars` WRITE;
 /*!40000 ALTER TABLE `czars` DISABLE KEYS */;
-INSERT INTO `czars` VALUES (5,'admin','$2a$08$rc04VqIrsvtAJqyKEhffCO8EFVd9isQAY5hRWBufnB2AajjTFIAKG','2018-10-03 21:55:31','2018-10-03 21:55:31','0000-00-00 00:00:00','');
+INSERT INTO `czars` VALUES (5,'admin','$2a$08$rc04VqIrsvtAJqyKEhffCO8EFVd9isQAY5hRWBufnB2AajjTFIAKG','2018-10-03 21:55:31','2018-10-04 08:47:29','2018-10-04 08:47:29','::1'),(6,'root','$2a$08$jkn4YTM8gg/ZSmKRh51juuM4jfkSLfd0Hx6Q0adlldLtSTWPWEDLC','2018-10-04 08:47:53','2018-10-04 08:47:53','0000-00-00 00:00:00','');
 /*!40000 ALTER TABLE `czars` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -652,7 +652,7 @@ CREATE TABLE `sessions` (
 
 LOCK TABLES `sessions` WRITE;
 /*!40000 ALTER TABLE `sessions` DISABLE KEYS */;
-INSERT INTO `sessions` VALUES ('0xr1DnH4a2pd6f4uk7jJP7GyWY5cUOmBbFGQlmoG',1538603736,'a:4:{s:5:\":new:\";a:0:{}s:5:\":old:\";a:0:{}s:10:\"csrf_token\";s:40:\"XV63wSONUtagdkQaJpUX1jqjtyom3567zJChgIGp\";s:20:\"session_captcha_hash\";s:60:\"$2a$08$N9Oav3JA/CBtyROGpH5cVOW47okssp4K7kzx5GMC3TGt7t.myPMAu\";}',0);
+INSERT INTO `sessions` VALUES ('81vXehk7KNys4lLprpqKm9N49D5hnNOSkfiqDHil',1538643970,'a:5:{s:5:\":new:\";a:0:{}s:5:\":old:\";a:0:{}s:10:\"csrf_token\";s:40:\"Xkqa6sRQ877ZNIBIxWztAOGfoi3Gg0rvufpyI4HZ\";s:20:\"session_captcha_hash\";s:60:\"$2a$08$CMGHiw7gqVLapsEkWvnvxegoPsqEpNxNMnLSfhuFq0O8g1P/h/cyu\";s:12:\"czar_session\";O:4:\"Czar\":5:{s:10:\"attributes\";a:7:{s:2:\"id\";i:5;s:8:\"username\";s:5:\"admin\";s:8:\"password\";s:60:\"$2a$08$rc04VqIrsvtAJqyKEhffCO8EFVd9isQAY5hRWBufnB2AajjTFIAKG\";s:10:\"created_at\";s:19:\"2018-10-03 21:55:31\";s:10:\"updated_at\";O:8:\"DateTime\":3:{s:4:\"date\";s:26:\"2018-10-04 08:47:29.663448\";s:13:\"timezone_type\";i:3;s:8:\"timezone\";s:3:\"UTC\";}s:10:\"last_login\";s:19:\"2018-10-04 08:47:29\";s:7:\"last_ip\";s:3:\"::1\";}s:8:\"original\";a:7:{s:2:\"id\";i:5;s:8:\"username\";s:5:\"admin\";s:8:\"password\";s:60:\"$2a$08$rc04VqIrsvtAJqyKEhffCO8EFVd9isQAY5hRWBufnB2AajjTFIAKG\";s:10:\"created_at\";s:19:\"2018-10-03 21:55:31\";s:10:\"updated_at\";r:12;s:10:\"last_login\";s:19:\"2018-10-04 08:47:29\";s:7:\"last_ip\";s:3:\"::1\";}s:13:\"relationships\";a:0:{}s:6:\"exists\";b:1;s:8:\"includes\";a:0:{}}}',0);
 /*!40000 ALTER TABLE `sessions` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -866,4 +866,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-10-04  0:00:03
+-- Dump completed on 2018-10-04 11:12:43
