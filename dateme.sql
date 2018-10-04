@@ -844,8 +844,8 @@ CREATE TABLE `users` (
   `language` varchar(3) CHARACTER SET latin1 NOT NULL,
   `profile_score` int(11) NOT NULL,
   `album_count` int(11) NOT NULL,
-  `lat` float(10,6) NOT NULL DEFAULT '0.000000',
-  `lng` float(10,6) NOT NULL DEFAULT '0.000000',
+  `lat` float(10,6) DEFAULT '0.000000',
+  `lng` float(10,6) DEFAULT '0.000000',
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=21108 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -868,4 +868,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-10-04 15:27:28
+-- Dump completed on 2018-10-04 15:34:31
